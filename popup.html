@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Redirector</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-3" style="width: 550px; max-height: 600px">
+      <!-- 言語切り替え -->
+      <div class="d-flex justify-content-end mb-2">
+        <div class="btn-group btn-group-sm" role="group">
+          <input
+            type="radio"
+            class="btn-check"
+            name="language"
+            id="lang-en"
+            value="en"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="lang-en">EN</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="language"
+            id="lang-ja"
+            value="ja"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-secondary" for="lang-ja">日本語</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="language"
+            id="lang-ja-aw"
+            value="ja_AW"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="lang-ja-aw"
+            >阿波弁</label
+          >
+        </div>
+      </div>
+
+      <h1 class="text-center mb-3">
+        <i class="bi bi-arrow-repeat text-primary"></i>
+        <span data-i18n="appTitle"></span>
+      </h1>
+
+      <!-- 新しいルールを追加 -->
+      <div class="card mb-3">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0">
+            <i class="bi bi-plus-circle"></i>
+            <span data-i18n="addNewRule"></span>
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label
+              for="pattern"
+              class="form-label fw-bold"
+              data-i18n="urlPattern"
+            ></label>
+            <input
+              type="text"
+              class="form-control"
+              id="pattern"
+              data-i18n-placeholder="urlPatternPlaceholder"
+            />
+            <div class="form-text" data-i18n="urlPatternHelp"></div>
+          </div>
+
+          <div class="mb-3">
+            <label
+              for="redirect"
+              class="form-label fw-bold"
+              data-i18n="redirectTo"
+            ></label>
+            <input
+              type="text"
+              class="form-control"
+              id="redirect"
+              data-i18n-placeholder="redirectToPlaceholder"
+            />
+          </div>
+
+          <button id="addRule" class="btn btn-primary w-100">
+            <i class="bi bi-plus-lg"></i>
+            <span data-i18n="addRuleButton"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ストレージ設定 -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="syncToggle"
+              checked
+            />
+            <label class="form-check-label" for="syncToggle">
+              <i class="bi bi-cloud-check"></i>
+              <span data-i18n="useSyncStorage"></span><br />
+              <small class="text-muted" data-i18n="syncStorageHelp"></small>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 登録済みルール -->
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h5 class="mb-0">
+            <i class="bi bi-list-ul"></i>
+            <span data-i18n="registeredRules"></span>
+          </h5>
+        </div>
+        <div class="card-body p-2" style="max-height: 300px; overflow-y: auto">
+          <div id="rulesList"></div>
+        </div>
+      </div>
+
+      <!-- ステータスメッセージ -->
+      <div
+        id="status"
+        class="alert alert-dismissible fade show mt-3"
+        role="alert"
+        style="display: none"
+      >
+        <span id="statusMessage"></span>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

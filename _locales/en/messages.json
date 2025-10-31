@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "Custom Redirector"
+  },
+  "extDescription": {
+    "message": "Redirects pages matching any URL pattern to a specific page"
+  },
+  "appTitle": {
+    "message": "Custom Redirector"
+  },
+  "addNewRule": {
+    "message": "Add New Rule"
+  },
+  "urlPattern": {
+    "message": "URL Pattern:"
+  },
+  "urlPatternPlaceholder": {
+    "message": "e.g. *example.com*, *.example.com/*"
+  },
+  "urlPatternHelp": {
+    "message": "Use * as wildcard"
+  },
+  "redirectTo": {
+    "message": "Redirect To:"
+  },
+  "redirectToPlaceholder": {
+    "message": "e.g. https://www.google.com"
+  },
+  "addRuleButton": {
+    "message": "Add Rule"
+  },
+  "useSyncStorage": {
+    "message": "Use Sync Storage"
+  },
+  "syncStorageHelp": {
+    "message": "(Sync settings across devices)"
+  },
+  "useLocalStorage": {
+    "message": "Use Local Storage"
+  },
+  "localStorageHelp": {
+    "message": "(This device only)"
+  },
+  "registeredRules": {
+    "message": "Registered Rules"
+  },
+  "enabled": {
+    "message": "Enabled"
+  },
+  "disabled": {
+    "message": "Disabled"
+  },
+  "deleteButton": {
+    "message": "Delete"
+  },
+  "pattern": {
+    "message": "Pattern:"
+  },
+  "noRules": {
+    "message": "No rules registered yet"
+  },
+  "errorBothRequired": {
+    "message": "Please enter both pattern and redirect destination"
+  },
+  "errorInvalidUrl": {
+    "message": "Please enter a valid URL (e.g. https://www.example.com)"
+  },
+  "successAddRule": {
+    "message": "Rule added"
+  },
+  "successDeleteRule": {
+    "message": "Rule deleted"
+  },
+  "successEnableRule": {
+    "message": "Rule enabled"
+  },
+  "successDisableRule": {
+    "message": "Rule disabled"
+  },
+  "successChangeSyncMode": {
+    "message": "Changed to sync mode"
+  },
+  "successChangeLocalMode": {
+    "message": "Changed to local mode"
+  },
+  "successChangeLanguage": {
+    "message": "Language changed"
+  }
+}

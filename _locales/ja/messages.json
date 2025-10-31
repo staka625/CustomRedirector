@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "Custom Redirector"
+  },
+  "extDescription": {
+    "message": "任意のURLパターンにマッチするページを特定のページへリダイレクトします"
+  },
+  "appTitle": {
+    "message": "Custom Redirector"
+  },
+  "addNewRule": {
+    "message": "新しいルールを追加"
+  },
+  "urlPattern": {
+    "message": "URLパターン:"
+  },
+  "urlPatternPlaceholder": {
+    "message": "例: *example.com*, *.example.com/*"
+  },
+  "urlPatternHelp": {
+    "message": "*をワイルドカードとして使用できます"
+  },
+  "redirectTo": {
+    "message": "リダイレクト先:"
+  },
+  "redirectToPlaceholder": {
+    "message": "例: https://www.google.com"
+  },
+  "addRuleButton": {
+    "message": "ルールを追加"
+  },
+  "useSyncStorage": {
+    "message": "同期ストレージを使用"
+  },
+  "syncStorageHelp": {
+    "message": "(複数デバイス間で設定を同期)"
+  },
+  "useLocalStorage": {
+    "message": "ローカルストレージを使用"
+  },
+  "localStorageHelp": {
+    "message": "(このデバイスのみで使用)"
+  },
+  "registeredRules": {
+    "message": "登録済みルール"
+  },
+  "enabled": {
+    "message": "有効"
+  },
+  "disabled": {
+    "message": "無効"
+  },
+  "deleteButton": {
+    "message": "削除"
+  },
+  "pattern": {
+    "message": "パターン:"
+  },
+  "noRules": {
+    "message": "ルールがまだ登録されていません"
+  },
+  "errorBothRequired": {
+    "message": "パターンとリダイレクト先の両方を入力してください"
+  },
+  "errorInvalidUrl": {
+    "message": "有効なURLを入力してください(例: https://www.example.com)"
+  },
+  "successAddRule": {
+    "message": "ルールを追加しました"
+  },
+  "successDeleteRule": {
+    "message": "ルールを削除しました"
+  },
+  "successEnableRule": {
+    "message": "ルールを有効にしました"
+  },
+  "successDisableRule": {
+    "message": "ルールを無効にしました"
+  },
+  "successChangeSyncMode": {
+    "message": "ストレージを同期モードに変更しました"
+  },
+  "successChangeLocalMode": {
+    "message": "ストレージをローカルモードに変更しました"
+  },
+  "successChangeLanguage": {
+    "message": "言語を変更しました"
+  }
+}

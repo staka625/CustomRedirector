@@ -1,0 +1,89 @@
+{
+  "extName": {
+    "message": "Custom Redirector"
+  },
+  "extDescription": {
+    "message": "URLパターンに合うたページを決めとるページへ飛ばすけんな"
+  },
+  "appTitle": {
+    "message": "Custom Redirector"
+  },
+  "addNewRule": {
+    "message": "さらのルール追加"
+  },
+  "urlPattern": {
+    "message": "URLパターン:"
+  },
+  "urlPatternPlaceholder": {
+    "message": "例: *example.com*, *.example.com/*"
+  },
+  "urlPatternHelp": {
+    "message": "*はなんでもかんまん印で使えるけんな"
+  },
+  "redirectTo": {
+    "message": "飛んでく先:"
+  },
+  "redirectToPlaceholder": {
+    "message": "例: https://www.google.com"
+  },
+  "addRuleButton": {
+    "message": "ルールこっしゃえる"
+  },
+  "useSyncStorage": {
+    "message": "同期してルールつまえとくでよ"
+  },
+  "syncStorageHelp": {
+    "message": "(今のとちゃうデバイスでもログインしたら設定一緒になるけんな)"
+  },
+  "useLocalStorage": {
+    "message": "ローカルでルールつまえとくでよ"
+  },
+  "localStorageHelp": {
+    "message": "(この端末だけで使うけんな)"
+  },
+  "registeredRules": {
+    "message": "登録しとるルール"
+  },
+  "enabled": {
+    "message": "有効"
+  },
+  "disabled": {
+    "message": "無効"
+  },
+  "deleteButton": {
+    "message": "ほる"
+  },
+  "pattern": {
+    "message": "パターン:"
+  },
+  "noRules": {
+    "message": "いっちょもないでないで"
+  },
+  "errorBothRequired": {
+    "message": "パターンと飛んでく先のどっちもいるでよ"
+  },
+  "errorInvalidUrl": {
+    "message": "そがいなごじゃ入れられん(ちゃんとしたんにせなあかんわ: https://www.example.com)"
+  },
+  "successAddRule": {
+    "message": "ルール追加したけん"
+  },
+  "successDeleteRule": {
+    "message": "ルールほったけん"
+  },
+  "successEnableRule": {
+    "message": "ルール有効にしたけん"
+  },
+  "successDisableRule": {
+    "message": "ルール無効にしたけん"
+  },
+  "successChangeSyncMode": {
+    "message": "つまえ方を同期に変えたけんな"
+  },
+  "successChangeLocalMode": {
+    "message": "つまえ方をローカルに変えたけんな"
+  },
+  "successChangeLanguage": {
+    "message": "阿波弁に変えたけん"
+  }
+}
